@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+g {
+  cursor:pointer;
+}

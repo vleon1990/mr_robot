@@ -1,0 +1,60 @@
+.row {  
+  display: flex;
+  justify-content: center;
+}
+.side {
+  flex: 25%;
+}
+.sideTwo {
+  flex: 25%;
+}
+/* Robot column */
+.main {
+  flex: 50%;
+}
+/* Fake image */
+.fakeimg {
+  position: relative;
+  cursor:pointer;
+}
+@media screen and (min-width: 1025px) and (max-width: 2400px) {
+  .row {
+    align-items: center;
+  }
+  .fakeimg {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .row {
+    align-items: center;
+  }
+  .fakeimg {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .row {
+    align-items: center;
+  }
+  .fakeimg {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .row {   
+    flex-direction: column;
+  }
+  .fakeimg {
+    height: 130px;
+    width: 100vh;
+  }
+  .side {
+    display: flex;
+    flex-direction: row;
+  }
+  .sideTwo {
+    display: flex;
+    flex-direction: row;
+  }
+}
