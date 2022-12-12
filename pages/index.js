@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 
 export default function Home() {
-  const {showmulti,showmac,showocr,showdocker,showcollaz,showdron,shownet,
+  const {showmulti,showmac,showocr,showdocker,showcollaz,showdron,
         setOpenMulti, setOpenCollaz, setOpenDron, setOpenDocker, setOpenOcr,setOpenMac} = useLinks()
 
   const multipass = <Image onClick={() => setOpenMulti(true)} src='/multi.png'  alt="multi" layout='fill' objectFit='contain' />
@@ -21,7 +21,6 @@ export default function Home() {
   const docker = <Image onClick={() => setOpenDocker(true)} src='/docker.png'  alt="docker" layout='fill' objectFit='contain' />
   const collaz = <Image onClick={() => setOpenCollaz(true)} src='/collaz.svg'  alt="collaz" layout='fill' objectFit='contain' />
   const dron = <Image onClick={() => setOpenDron(true)} src='/dron.svg' alt='dron' layout='fill' objectFit='contain' />
-  const net = "Network"
   
   return (
   <>

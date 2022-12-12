@@ -9,7 +9,7 @@ const variants = {
 
 const Cabeza = () => {
 	const [isOpen, setIsOpen] = useState(false)
-	const {handleNet,svgRotateRight,svgRotateLeft} = useLinks()
+	const {handleAllParts,svgRotateRight,svgRotateLeft} = useLinks()
 return (
 	<motion.g 
 	type="button" 
@@ -19,7 +19,7 @@ return (
 	variants={variants}
 	onClick={() => {
 		setIsOpen(isOpen => !isOpen)
-		handleNet()
+		handleAllParts()
 	}}
 	>
 	<g>

@@ -38,9 +38,9 @@ export const LinksProvider = ({children}) => {
         setShowDron(!showdron);
     };
 
-    const [shownet, setShowNet] = useState([])
-    const handleNet = () => {
-        setShowNet(!shownet);
+    const [showall, setShowAll] = useState([])
+    const handleAllParts = () => {
+        setShowAll(!showall);
     };
 
     const svgRotateRight = {
@@ -68,7 +68,7 @@ export const LinksProvider = ({children}) => {
             showdocker,handleDocker,
             showcollaz,handleCollaz,
             showdron,handleDron,
-            shownet,handleNet,
+            showall,handleAllParts,
             svgRotateRight,svgRotateLeft,
             openMulti,setOpenMulti,
             openCollaz,setOpenCollaz,
